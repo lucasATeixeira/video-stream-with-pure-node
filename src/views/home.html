@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de vídeo</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        color: white;
+      }
+
+      html {
+        background: rgb(18, 18, 20)
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        min-width: 100vw;
+        min-height: 100vh;
+      }
+
+      h1 {
+        margin-bottom: 24px;
+      }
+
+      p {
+        max-width: 800px;
+        margin-bottom: 48px;
+
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Stream video with pure node and pipe stream</h1>
+    <p>The purpose of this project is to create a web system with pure node without using external libraries to display videos via pipe stream</p>
+    <video id="videoPlayer" controls>
+      <source src="http://localhost:3000/api/video" type="video/mp4">
+    </video>
+  </body>
+  <script>
+
+  </script>
+</html>
